@@ -177,12 +177,12 @@ objects:
           readinessProbe:
             httpGet:
               path: "/health"
-              port: 8086
+              port: 8087
             initialDelaySeconds: 10
           livenessProbe:
             httpGet:
               path: "/health"
-              port: 8086
+              port: 8087
             initialDelaySeconds: 180
           ports:
           - containerPort: 8123
